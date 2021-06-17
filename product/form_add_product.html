@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Add Product</title>
+</head>
+<body>
+
+
+<form method="POST" action="action_saveproduct.php" enctype="multipart/form-data">
+ชื่อสินค้า : <input type="text" name="Product_name" id="Product_name"><br>
+ประเภทสินค้า : <br>
+			<input type="radio" value=1 name="ProType_ID" id="ProType_ID" required>ประเภทสินค้า 1 <br>
+			<input type="radio" value=2 name="ProType_ID" id="ProType_ID" required>ประเภทสินค้า 2<br>
+			<input type="radio" value=3 name="ProType_ID" id="ProType_ID" required>ประเภทสินค้า 3 <br>
+รายละเอียดสินค้า : <br><textarea type="text" name="Product_detail" id="Product_detail"></textarea> <br>
+ราคาสินค้า : <input type="number" name="Product_price" id="Product_price"><br>
+จำนวนคงคลัง : <input type="number" name="Product_stock" id="Product_stock"><br>
+รูป : <input type="file" name="Product_pic" id="Product_pic" required><br>
+<button type="submit" name="submit">เพิ่มสินค้า</button>
+</form>
+
+
+</body>
+</html>
